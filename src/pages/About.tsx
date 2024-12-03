@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../hooks/useLanguage';
+import PageTitle from '../components/shared/PageTitle';
 
 export default function About() {
   const { t } = useTranslation();
@@ -12,15 +13,10 @@ export default function About() {
   return (
     <div className="py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-12"
-        >
-          <h1 className="text-4xl font-serif text-gray-900 mb-4">{t('about.title')}</h1>
-          <p className="text-xl text-gray-600">{t('about.subtitle')}</p>
-        </motion.div>
+        <PageTitle 
+          title={t('about.title')} 
+          subtitle={t('about.subtitle')} 
+        />
 
         <div className={`grid grid-cols-1 md:grid-cols-2 gap-8 items-center ${isRTL ? 'md:flex-row-reverse' : ''}`}>
           <motion.div
@@ -40,7 +36,7 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className={`space-y-6 ${isRTL ? 'text-right' : 'text-left'}`}
+            className={`space-y-6 ${isRTL ? 'text-right font-arabic' : 'text-left'}`}
           >
             <h2 className="text-2xl font-serif text-gray-900">{t('about.mission.title')}</h2>
             <p className="text-gray-600">{t('about.mission.description')}</p>

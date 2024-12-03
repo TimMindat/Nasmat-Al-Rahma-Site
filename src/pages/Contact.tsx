@@ -1,11 +1,13 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
+import { useLanguage } from '../hooks/useLanguage';
 import ContactInfo from '../components/shared/ContactInfo';
 import PageTitle from '../components/shared/PageTitle';
 
 export default function Contact() {
   const { t } = useTranslation();
+  const { isRTL } = useLanguage();
 
   return (
     <div className="py-12">
@@ -23,7 +25,7 @@ export default function Contact() {
             viewport={{ once: true }}
             className="bg-white p-8 rounded-lg shadow-lg"
           >
-            <form className="space-y-6">
+            <form className={`space-y-6 ${isRTL ? 'text-right font-arabic' : ''}`}>
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700">
                   {t('contact.form.name')}
@@ -32,6 +34,7 @@ export default function Contact() {
                   type="text"
                   id="name"
                   className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-gold-500 focus:ring-gold-500"
+                  dir={isRTL ? 'rtl' : 'ltr'}
                 />
               </div>
               <div>
@@ -42,6 +45,7 @@ export default function Contact() {
                   type="email"
                   id="email"
                   className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-gold-500 focus:ring-gold-500"
+                  dir={isRTL ? 'rtl' : 'ltr'}
                 />
               </div>
               <div>
@@ -52,6 +56,7 @@ export default function Contact() {
                   id="message"
                   rows={4}
                   className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-gold-500 focus:ring-gold-500"
+                  dir={isRTL ? 'rtl' : 'ltr'}
                 ></textarea>
               </div>
               <button
