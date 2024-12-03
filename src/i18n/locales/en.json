@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "description": "Nasmat Al Rahma - Luxury Hajj & Umrah Services",
+    "keywords": "hajj, umrah, luxury service, makkah, madinah"
+  },
+  "nav": {
+    "packages": "Packages",
+    "spiritualGuidance": "Spiritual Guidance",
+    "ziyarat": "Ziyarat",
+    "about": "About",
+    "contact": "Contact",
+    "bookNow": "Book Now"
+  },
+  "hero": {
+    "title": "Experience a Luxurious Pilgrimage Journey",
+    "subtitle": "Premium Hajj and Umrah services tailored for Muslims",
+    "explorePackages": "Explore Packages",
+    "contactUs": "Contact Us",
+    "imageAlt": "Holy Kaaba during Hajj"
+  },
+  "packages": {
+    "title": "Our Packages",
+    "subtitle": "Choose the perfect package for your spiritual journey",
+    "vipUmrah": {
+      "title": "VIP Umrah Package",
+      "description": "Luxury 5-star accommodation near Haram",
+      "features": [
+        "Private transportation",
+        "VIP tawaf",
+        "Personal guide"
+      ]
+    },
+    "premiumHajj": {
+      "title": "Premium Hajj Package",
+      "description": "All-inclusive luxury Hajj experience",
+      "features": [
+        "5-star hotels",
+        "Private transport",
+        "24/7 support"
+      ]
+    },
+    "bookNow": "Book Now",
+    "duration": "Duration",
+    "price": "Price"
+  },
+  "spiritualGuidance": {
+    "title": "Spiritual Guidance",
+    "subtitle": "Expert guidance for your sacred journey",
+    "services": {
+      "education": {
+        "title": "Educational Resources",
+        "description": "Access comprehensive guides about Hajj and Umrah rituals"
+      },
+      "scholars": {
+        "title": "Expert Scholars",
+        "description": "Learn from qualified scholars throughout your journey"
+      },
+      "support": {
+        "title": "Personal Support",
+        "description": "Receive one-on-one support for your spiritual and practical needs"
+      },
+      "tours": {
+        "title": "Guided Tours",
+        "description": "Experience sacred sites with knowledgeable guides"
+      }
+    }
+  },
+  "ziyarat": {
+    "title": "Sacred Sites",
+    "subtitle": "Explore the holy places of Islam",
+    "sites": {
+      "masjidAlHaram": {
+        "name": "Masjid Al-Haram",
+        "description": "The Sacred Mosque in Makkah, home of the Kaaba"
+      },
+      "masjidNabawi": {
+        "name": "Masjid An-Nabawi",
+        "description": "The Prophet's Mosque in Madinah"
+      }
+    }
+  },
+  "about": {
+    "title": "About Nasmat Al Rahma",
+    "subtitle": "Your trusted partner for Hajj and Umrah services",
+    "mission": {
+      "title": "Our Mission",
+      "description": "At Nasmat Al Rahma, we are dedicated to providing Muslims with premium Hajj and Umrah services"
+    },
+    "values": {
+      "title": "Our Values",
+      "items": [
+        "Excellence in service",
+        "Spiritual guidance",
+        "Cultural sensitivity"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with our team",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send",
+      "success": "Your message has been sent successfully",
+      "error": "An error occurred. Please try again"
+    },
+    "info": {
+      "phone": "+966558088546",
+      "address": "Madinah, Saudi Arabia",
+      "email": "info@nasmat-alrahma.com"
+    }
+  }
+}

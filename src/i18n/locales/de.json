@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "description": "Nasmat Al Rahma - Luxuriöse Hadsch- und Umrah-Dienste",
+    "keywords": "Hadsch, Umrah, Luxus-Service, Mekka, Medina"
+  },
+  "nav": {
+    "packages": "Pakete",
+    "spiritualGuidance": "Spirituelle Führung",
+    "ziyarat": "Ziyarat",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "bookNow": "Jetzt buchen"
+  },
+  "hero": {
+    "title": "Erleben Sie eine luxuriöse Pilgerreise",
+    "subtitle": "Premium Hadsch- und Umrah-Dienste für Muslime",
+    "explorePackages": "Pakete erkunden",
+    "contactUs": "Kontaktieren Sie uns",
+    "imageAlt": "Heilige Kaaba während der Hadsch"
+  },
+  "packages": {
+    "title": "Unsere Pakete",
+    "subtitle": "Wählen Sie das perfekte Paket für Ihre spirituelle Reise",
+    "vipUmrah": {
+      "title": "VIP Umrah Paket",
+      "description": "Luxuriöse 5-Sterne-Unterkunft in der Nähe des Haram",
+      "features": [
+        "Privater Transport",
+        "VIP Tawaf",
+        "Persönlicher Guide"
+      ]
+    },
+    "premiumHajj": {
+      "title": "Premium Hadsch Paket",
+      "description": "All-inclusive Luxus-Hadsch-Erlebnis",
+      "features": [
+        "5-Sterne Hotels",
+        "Privater Transport",
+        "24/7 Unterstützung"
+      ]
+    },
+    "bookNow": "Jetzt buchen",
+    "duration": "Dauer",
+    "price": "Preis"
+  },
+  "spiritualGuidance": {
+    "title": "Spirituelle Führung",
+    "subtitle": "Experten-Führung für Ihre heilige Reise",
+    "services": {
+      "education": {
+        "title": "Bildungsressourcen",
+        "description": "Umfassende Anleitungen für Hadsch- und Umrah-Rituale"
+      },
+      "scholars": {
+        "title": "Experten-Gelehrte",
+        "description": "Lernen Sie von qualifizierten Gelehrten"
+      },
+      "support": {
+        "title": "Persönliche Betreuung",
+        "description": "Individuelle Unterstützung für Ihre spirituellen und praktischen Bedürfnisse"
+      },
+      "tours": {
+        "title": "Geführte Touren",
+        "description": "Erleben Sie heilige Stätten mit sachkundigen Führern"
+      }
+    }
+  },
+  "ziyarat": {
+    "title": "Heilige Stätten",
+    "subtitle": "Entdecken Sie die heiligen Orte des Islam",
+    "sites": {
+      "masjidAlHaram": {
+        "name": "Masjid Al-Haram",
+        "description": "Die heilige Moschee in Mekka, Heimat der Kaaba"
+      },
+      "masjidNabawi": {
+        "name": "Masjid An-Nabawi",
+        "description": "Die Propheten-Moschee in Medina"
+      }
+    }
+  },
+  "about": {
+    "title": "Über Nasmat Al Rahma",
+    "subtitle": "Ihr vertrauenswürdiger Partner für Hadsch- und Umrah-Dienste",
+    "mission": {
+      "title": "Unsere Mission",
+      "description": "Bei Nasmat Al Rahma widmen wir uns der Bereitstellung erstklassiger Hadsch- und Umrah-Dienste für Muslime"
+    },
+    "values": {
+      "title": "Unsere Werte",
+      "items": [
+        "Exzellenz im Service",
+        "Spirituelle Führung",
+        "Kulturelle Sensibilität"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Nehmen Sie Kontakt mit unserem Team auf",
+    "form": {
+      "name": "Name",
+      "email": "E-Mail",
+      "message": "Nachricht",
+      "submit": "Senden",
+      "success": "Ihre Nachricht wurde erfolgreich gesendet",
+      "error": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut"
+    },
+    "info": {
+      "phone": "+966558088546",
+      "address": "Medina, Saudi-Arabien",
+      "email": "info@nasmat-alrahma.com"
+    }
+  }
+}
