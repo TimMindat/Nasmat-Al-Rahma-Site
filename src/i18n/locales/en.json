@@ -4,12 +4,15 @@
     "keywords": "hajj, umrah, luxury service, makkah, madinah"
   },
   "nav": {
+    "home": "Home",
     "packages": "Packages",
-    "spiritualGuidance": "Spiritual Guidance",
+    "spiritualGuidance": "Guidance",
     "ziyarat": "Ziyarat",
     "about": "About",
     "contact": "Contact",
-    "bookNow": "Book Now"
+    "bookNow": "Book Now",
+    "language": "Change Language",
+    "selectLanguage": "Select Language"
   },
   "hero": {
     "title": "Begin Your Sacred Journey",
@@ -18,69 +21,5 @@
     "explorePackages": "Explore Packages",
     "contactUs": "Contact Us",
     "imageAlt": "Holy Kaaba during Hajj"
-  },
-  "packages": {
-    "title": "Our Blessed Packages",
-    "subtitle": "Choose the perfect package for your spiritual journey",
-    "vipUmrah": {
-      "title": "VIP Umrah Package",
-      "description": "Luxury accommodation near the Holy Haram",
-      "features": [
-        "Private transportation",
-        "VIP tawaf assistance",
-        "Dedicated spiritual guide"
-      ]
-    },
-    "premiumHajj": {
-      "title": "Premium Hajj Package",
-      "description": "Complete Hajj journey with premium services",
-      "features": [
-        "5-star hotels in Makkah & Madinah",
-        "Private transport",
-        "24/7 support"
-      ]
-    },
-    "bookNow": "Book Now",
-    "duration": "Duration",
-    "price": "Investment"
-  },
-  "spiritualGuidance": {
-    "title": "Spiritual Guidance",
-    "subtitle": "Expert guidance for your blessed journey",
-    "services": {
-      "education": {
-        "title": "Islamic Education",
-        "description": "Comprehensive guidance on Hajj and Umrah rituals"
-      },
-      "scholars": {
-        "title": "Islamic Scholars",
-        "description": "Learn from qualified scholars throughout your journey"
-      },
-      "support": {
-        "title": "Personal Support",
-        "description": "One-on-one guidance for your spiritual journey"
-      },
-      "tours": {
-        "title": "Guided Ziyarat",
-        "description": "Visit blessed sites with knowledgeable guides"
-      }
-    }
-  },
-  "contact": {
-    "title": "Contact Us",
-    "subtitle": "Get in touch with our team",
-    "form": {
-      "name": "Name",
-      "email": "Email",
-      "message": "Message",
-      "submit": "Send Message",
-      "success": "Your message has been sent successfully, Jazak Allah Khair",
-      "error": "An error occurred. Please try again"
-    },
-    "info": {
-      "phone": "+966558088546",
-      "address": "Madinah, Saudi Arabia",
-      "email": "info@nasmat-alrahma.com"
-    }
   }
 }
