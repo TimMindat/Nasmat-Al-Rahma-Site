@@ -70,12 +70,10 @@
     }
   },
   "ziyarat": {
-    "title": "Sacred Sites",
-    "subtitle": "Explore the holy places of Islam",
     "sites": {
       "masjidAlHaram": {
         "name": "Masjid Al-Haram",
-        "description": "The Sacred Mosque in Makkah, home of the Kaaba"
+        "description": "The Sacred Mosque in Makkah"
       },
       "masjidNabawi": {
         "name": "Masjid An-Nabawi",
@@ -101,53 +99,13 @@
     "quoteText": "Indeed, Allah is with those who fear Him and those who are doers of good.",
     "quoteSource": "Quran 16:128"
   },
-  "contact": {
-    "title": "Contact Us",
-    "subtitle": "Get in touch with our team",
-    "form": {
-      "name": "Name",
-      "email": "Email",
-      "phone": "Phone",
-      "message": "Message",
-      "submit": "Send Message",
-      "address": "Address",
-      "success": "Your message has been sent successfully",
-      "error": "An error occurred. Please try again"
-    },
-    "info": {
-      "phone": "+966558088546",
-      "address": "Madinah, Saudi Arabia",
-      "email": "info@nasmat-alrahma.com"
-    }
-  },
-  "bookNow": {
-    "title": "Book Your Journey",
-    "subtitle": "Complete the form below to start your spiritual journey",
-    "form": {
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "email": "Email",
-      "phone": "Phone",
-      "package": "Select Package",
-      "date": "Preferred Date",
-      "notes": "Special Requirements",
-      "submit": "Submit Booking",
-      "success": "Your booking request has been submitted",
-      "error": "An error occurred. Please try again"
-    }
-  },
-  "testimonials": {
-    "title": "What Our Pilgrims Say",
-    "subtitle": "Real experiences from our valued guests",
-    "comingSoon": "Pilgrim testimonials coming soon"
-  },
   "whyChooseUs": {
     "title": "Why Choose Nasmat Al Rahma",
     "subtitle": "Experience excellence in every aspect of your spiritual journey",
     "features": {
       "licensed": {
         "title": "Licensed & Certified",
-        "description": "Fully licensed by Saudi authorities with 20+ years of experience"
+        "description": "Fully licensed by Saudi authorities"
       },
       "premium": {
         "title": "Premium Services",
@@ -162,5 +120,9 @@
         "description": "Round-the-clock assistance throughout your journey"
       }
     }
+  },
+  "footer": {
+    "copyright": "Nasmat Al Rahma. All rights reserved",
+    "developedBy": "Developed by"
   }
 }

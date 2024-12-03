@@ -1,12 +1,11 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { useLanguage } from '../../hooks/useLanguage';
+import PackageCard from '../../components/shared/PackageCard';
 import type { Package } from '../../types';
 
 export default function Packages() {
   const { t } = useTranslation();
-  const { isRTL } = useLanguage();
 
   const packages: Package[] = [
     {
@@ -50,32 +49,11 @@ export default function Packages() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="bg-white rounded-lg shadow-lg overflow-hidden"
             >
-              <img
-                src={pkg.image}
-                alt={pkg.title}
-                className="w-full h-48 object-cover"
+              <PackageCard
+                package={pkg}
+                buttonText={t('packages.bookNow')}
               />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">{pkg.title}</h3>
-                <p className="text-gray-600 mb-4">{pkg.description}</p>
-                <ul className={`space-y-2 mb-4 ${isRTL ? 'text-right' : 'text-left'}`}>
-                  {pkg.features.map((feature, index) => (
-                    <li key={index} className="flex items-center text-sm">
-                      <span className="mr-2">•</span>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-                <div className={`flex justify-between items-center ${isRTL ? 'flex-row-reverse' : ''}`}>
-                  <span className="text-gold-600 font-semibold">{pkg.price}</span>
-                  <span className="text-sm text-gray-500">{pkg.duration}</span>
-                </div>
-                <button className="w-full mt-4 px-4 py-2 bg-gold-600 text-white rounded hover:bg-gold-700 transition-colors">
-                  {t('packages.bookNow')}
-                </button>
-              </div>
             </motion.div>
           ))}
         </div>

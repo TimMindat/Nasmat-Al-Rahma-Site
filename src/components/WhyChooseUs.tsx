@@ -9,23 +9,23 @@ export default function WhyChooseUs() {
   const features = [
     {
       icon: Shield,
-      title: 'Licensed & Certified',
-      description: 'Fully licensed by Saudi authorities with 20+ years of experience'
+      title: t('whyChooseUs.features.licensed.title'),
+      description: t('whyChooseUs.features.licensed.description')
     },
     {
       icon: Star,
-      title: 'Premium Services',
-      description: '5-star accommodations and VIP transportation services'
+      title: t('whyChooseUs.features.premium.title'),
+      description: t('whyChooseUs.features.premium.description')
     },
     {
       icon: Users,
-      title: 'Expert Guidance',
-      description: 'Multilingual spiritual guides and dedicated support team'
+      title: t('whyChooseUs.features.expert.title'),
+      description: t('whyChooseUs.features.expert.description')
     },
     {
       icon: Clock,
-      title: '24/7 Support',
-      description: 'Round-the-clock assistance throughout your journey'
+      title: t('whyChooseUs.features.support.title'),
+      description: t('whyChooseUs.features.support.description')
     }
   ];
 
@@ -40,7 +40,7 @@ export default function WhyChooseUs() {
             viewport={{ once: true }}
             className="text-3xl font-serif text-gray-900 mb-4"
           >
-            Why Choose Nasmat Al Rahma
+            {t('whyChooseUs.title')}
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -49,7 +49,7 @@ export default function WhyChooseUs() {
             viewport={{ once: true }}
             className="text-xl text-gray-600"
           >
-            Experience excellence in every aspect of your spiritual journey
+            {t('whyChooseUs.subtitle')}
           </motion.p>
         </div>
 

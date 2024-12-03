@@ -7,6 +7,8 @@ export default function About() {
   const { t } = useTranslation();
   const { isRTL } = useLanguage();
 
+  const values = t('about.values.items', { returnObjects: true }) as string[];
+
   return (
     <div className="py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -22,7 +24,7 @@ export default function About() {
 
         <div className={`grid grid-cols-1 md:grid-cols-2 gap-8 items-center ${isRTL ? 'md:flex-row-reverse' : ''}`}>
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
+            initial={{ opacity: 0, x: isRTL ? 20 : -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
@@ -34,7 +36,7 @@ export default function About() {
             />
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
+            initial={{ opacity: 0, x: isRTL ? -20 : 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
@@ -44,15 +46,15 @@ export default function About() {
             <p className="text-gray-600">{t('about.mission.description')}</p>
             <h2 className="text-2xl font-serif text-gray-900">{t('about.values.title')}</h2>
             <ul className="space-y-4">
-              {t('about.values.items', { returnObjects: true }).map((value: string, index: number) => (
-                <li key={index} className="flex items-center">
+              {values.map((value, index) => (
+                <li key={index} className={`flex items-center ${isRTL ? 'flex-row-reverse' : ''}`}>
                   <span className={`w-2 h-2 bg-gold-600 rounded-full ${isRTL ? 'ml-3' : 'mr-3'}`}></span>
                   <span>{value}</span>
                 </li>
               ))}
             </ul>
             <div className="mt-8 p-6 bg-gold-50 rounded-lg">
-              <p className="text-center text-gold-800 italic">
+              <p className={`text-center text-gold-800 italic ${isRTL ? 'font-arabic' : ''}`}>
                 {t('about.quoteText')}
                 <br />
                 <span className="text-sm mt-2 block">- {t('about.quoteSource')}</span>

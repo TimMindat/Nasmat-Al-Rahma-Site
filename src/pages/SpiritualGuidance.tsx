@@ -44,7 +44,7 @@ export default function SpiritualGuidance() {
           <p className="text-xl text-gray-600">{t('spiritualGuidance.subtitle')}</p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <motion.div
               key={index}
@@ -54,7 +54,7 @@ export default function SpiritualGuidance() {
               viewport={{ once: true }}
               className={`bg-white p-6 rounded-lg shadow-lg ${isRTL ? 'text-right' : 'text-left'}`}
             >
-              <div className={`w-12 h-12 bg-gold-100 rounded-lg flex items-center justify-center mb-4 ${isRTL ? 'mr-auto' : 'ml-0'}`}>
+              <div className={`w-12 h-12 bg-gold-100 rounded-lg flex items-center justify-center mb-4 ${isRTL ? 'mr-0 ml-auto' : 'ml-0'}`}>
                 <service.icon className="w-6 h-6 text-gold-600" />
               </div>
               <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
