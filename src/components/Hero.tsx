@@ -10,11 +10,11 @@ export default function Hero() {
     <div className="relative h-screen">
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1693590614566-1d3ea9ef32f7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          src="https://images.unsplash.com/photo-1537444532052-2afbf337c310?auto=format&fit=crop&q=80"
           alt={t('hero.imageAlt')}
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/50"></div>
       </div>
       
       <div className="relative max-w-7xl mx-auto h-full flex items-center px-4 sm:px-6 lg:px-8">
@@ -24,11 +24,14 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="text-center w-full"
         >
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif text-white mb-8">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif text-white mb-4">
             {t('hero.title')}
           </h1>
-          <p className="text-xl sm:text-2xl text-white mb-12 max-w-3xl mx-auto">
+          <p className="text-xl sm:text-2xl text-white mb-4 max-w-3xl mx-auto">
             {t('hero.subtitle')}
+          </p>
+          <p className="text-lg text-gold-200 mb-12 max-w-2xl mx-auto italic">
+            {t('hero.bismillah')}
           </p>
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
             <Link to="/packages">
