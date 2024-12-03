@@ -45,12 +45,8 @@ export default function Ziyarat() {
                 className="w-full h-64 object-cover"
               />
               <div className={`p-6 ${isRTL ? 'text-right font-arabic' : 'text-left'}`}>
-                <h3 className={`text-xl font-semibold mb-2 ${isRTL ? 'leading-relaxed' : ''}`}>
-                  {site.name}
-                </h3>
-                <p className={`text-gray-600 ${isRTL ? 'leading-relaxed' : ''}`}>
-                  {site.description}
-                </p>
+                <h3 className="text-xl font-semibold mb-2">{site.name}</h3>
+                <p className="text-gray-600">{site.description}</p>
               </div>
             </motion.div>
           ))}
