@@ -1,25 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Globe, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLanguage } from '../../hooks/useLanguage';
+import LanguageButton from '../shared/LanguageButton';
 import type { Language } from '../../types';
+
+const languages: { code: Language; name: string; nativeName: string }[] = [
+  { code: 'en', name: 'English', nativeName: 'English' },
+  { code: 'ar', name: 'Arabic', nativeName: 'العربية' },
+  { code: 'de', name: 'German', nativeName: 'Deutsch' }
+];
 
 export default function MobileLanguageSelector() {
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation();
-  const { currentLanguage, changeLanguage, isRTL } = useLanguage();
+  const { currentLanguage, changeLanguage } = useLanguage();
 
-  const languages: { code: Language; name: string; nativeName: string }[] = [
-    { code: 'en', name: 'English', nativeName: 'English' },
-    { code: 'ar', name: 'Arabic', nativeName: 'العربية' },
-    { code: 'de', name: 'German', nativeName: 'Deutsch' }
-  ];
-
-  const handleLanguageChange = (code: Language) => {
+  const handleLanguageChange = useCallback((code: Language) => {
     changeLanguage(code);
     setIsOpen(false);
-  };
+  }, [changeLanguage]);
 
   return (
     <>
@@ -59,18 +60,12 @@ export default function MobileLanguageSelector() {
               </div>
               <div className="space-y-2">
                 {languages.map((language) => (
-                  <button
+                  <LanguageButton
                     key={language.code}
-                    onClick={() => handleLanguageChange(language.code)}
-                    className={`w-full p-4 text-left rounded-lg flex items-center justify-between ${
-                      currentLanguage === language.code
-                        ? 'bg-gold-50 text-gold-600'
-                        : 'hover:bg-gray-50'
-                    }`}
-                  >
-                    <span className="font-medium">{language.nativeName}</span>
-                    <span className="text-sm text-gray-500">({language.name})</span>
-                  </button>
+                    {...language}
+                    isActive={currentLanguage === language.code}
+                    onClick={handleLanguageChange}
+                  />
                 ))}
               </div>
             </motion.div>
