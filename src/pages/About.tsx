@@ -36,11 +36,15 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className={`space-y-6 ${isRTL ? 'text-right font-arabic' : 'text-left'}`}
+            className={`space-y-6 ${isRTL ? 'text-right font-arabic' : ''}`}
           >
-            <h2 className="text-2xl font-serif text-gray-900">{t('about.mission.title')}</h2>
+            <h2 className={`text-2xl ${isRTL ? 'font-arabic' : 'font-serif'} text-gray-900`}>
+              {t('about.mission.title')}
+            </h2>
             <p className="text-gray-600">{t('about.mission.description')}</p>
-            <h2 className="text-2xl font-serif text-gray-900">{t('about.values.title')}</h2>
+            <h2 className={`text-2xl ${isRTL ? 'font-arabic' : 'font-serif'} text-gray-900`}>
+              {t('about.values.title')}
+            </h2>
             <ul className="space-y-4">
               {values.map((value, index) => (
                 <li key={index} className={`flex items-center ${isRTL ? 'flex-row-reverse' : ''}`}>
