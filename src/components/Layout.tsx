@@ -3,6 +3,7 @@ import { useLanguage } from '../hooks/useLanguage';
 import Navbar from './Navbar';
 import BottomNav from './MobileNav/BottomNav';
 import Footer from './shared/Footer';
+import InstallPrompt from './shared/PWAPrompt/InstallPrompt';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -19,6 +20,7 @@ export default function Layout({ children }: LayoutProps) {
       </main>
       <Footer />
       <BottomNav />
+      <InstallPrompt />
     </div>
   );
 }

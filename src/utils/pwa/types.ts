@@ -14,3 +14,8 @@ export interface BrowserSupport {
   manifest: boolean;
   installPrompt: boolean;
 }
+
+export interface PWAPromptPreference {
+  dismissed: boolean;
+  remindAt?: string;
+}
