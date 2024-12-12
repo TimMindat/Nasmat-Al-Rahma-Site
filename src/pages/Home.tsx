@@ -1,9 +1,8 @@
 import React from 'react';
-import Hero from '../components/Hero';
+import Hero from '../components/layout/Hero';
 import Hajj2025 from '../features/hajj2025';
-import FeaturedPackages from '../components/FeaturedPackages';
-import WhyChooseUs from '../components/WhyChooseUs';
-import Testimonials from '../components/Testimonials';
+import FeaturedPackages from '../components/packages/FeaturedPackages';
+import WhyChooseUs from '../components/features/WhyChooseUs';
 
 export default function Home() {
   return (
@@ -12,7 +11,6 @@ export default function Home() {
       <Hajj2025 />
       <FeaturedPackages />
       <WhyChooseUs />
-      <Testimonials />
     </div>
   );
 }

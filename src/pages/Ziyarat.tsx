@@ -12,7 +12,7 @@ export default function Ziyarat() {
     {
       name: t('ziyarat.sites.masjidAlHaram.name'),
       description: t('ziyarat.sites.masjidAlHaram.description'),
-      image: 'https://images.unsplash.com/photo-1604867317798-4ae4a31d4e54?auto=format&fit=crop&w=800'
+      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Great_Mosque_of_Mecca1.jpg/1920px-Great_Mosque_of_Mecca1.jpg'
     },
     {
       name: t('ziyarat.sites.masjidNabawi.name'),

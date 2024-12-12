@@ -26,7 +26,7 @@ export default function About() {
             viewport={{ once: true }}
           >
             <img
-              src="https://images.unsplash.com/photo-1604867317798-4ae4a31d4e54?auto=format&fit=crop&w=800"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/The_Kaaba_during_Hajj.jpg/1920px-The_Kaaba_during_Hajj.jpg"
               alt={t('about.title')}
               className="rounded-lg shadow-lg"
             />
