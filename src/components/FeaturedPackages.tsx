@@ -12,8 +12,8 @@ export default function FeaturedPackages() {
       id: 'vip-umrah',
       title: t('packages.vipUmrah.title'),
       description: t('packages.vipUmrah.description'),
-      features: t('packages.vipUmrah.features', { returnObjects: true }),
-      price: '$5,000',
+      features: t('packages.vipUmrah.features', { returnObjects: true }) as string[],
+      price: '€5,000',
       duration: '10 days',
       image: 'https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?auto=format&fit=crop&w=800'
     }

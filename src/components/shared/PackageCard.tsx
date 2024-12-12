@@ -11,6 +11,9 @@ interface PackageCardProps {
 export default function PackageCard({ package: pkg, onBook, buttonText }: PackageCardProps) {
   const { isRTL } = useLanguage();
 
+  // Ensure features is always an array
+  const features = Array.isArray(pkg.features) ? pkg.features : [];
+
   return (
     <div className="bg-white rounded-lg shadow-lg overflow-hidden">
       <img
@@ -22,7 +25,7 @@ export default function PackageCard({ package: pkg, onBook, buttonText }: Packag
         <h3 className="text-xl font-semibold mb-2">{pkg.title}</h3>
         <p className="text-gray-600 mb-4">{pkg.description}</p>
         <ul className={`space-y-2 mb-4 ${isRTL ? 'text-right' : 'text-left'}`}>
-          {pkg.features.map((feature, index) => (
+          {features.map((feature, index) => (
             <li key={index} className="flex items-center text-sm">
               <span className="mr-2">•</span>
               {feature}

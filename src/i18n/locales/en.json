@@ -1,79 +1,141 @@
 {
-  "meta": {
-    "description": "Nasmat Al Rahma - Luxury Hajj & Umrah Services",
-    "keywords": "hajj, umrah, luxury service, makkah, madinah"
-  },
   "nav": {
-    "home": "Home",
     "packages": "Packages",
-    "spiritualGuidance": "Guidance",
-    "ziyarat": "Ziyarat",
+    "spiritualGuidance": "Spiritual Guidance",
+    "ziyarat": "Sacred Sites",
     "about": "About",
     "contact": "Contact",
     "bookNow": "Book Now",
     "language": "Change Language",
-    "selectLanguage": "Select Language"
+    "selectLanguage": "Select Language",
+    "home": "Home"
   },
   "hero": {
-    "title": "Begin Your Sacred Journey",
-    "subtitle": "Premium Hajj and Umrah services tailored for your spiritual fulfillment",
+    "title": "Your Journey to Sacred Lands",
+    "subtitle": "Premium Hajj & Umrah Services with Spiritual Guidance",
     "bismillah": "In the name of Allah, the Most Gracious, the Most Merciful",
     "explorePackages": "Explore Packages",
     "contactUs": "Contact Us",
-    "imageAlt": "Holy Kaaba during Hajj"
+    "imageAlt": "Masjid Al-Haram"
   },
-  "packages": {
-    "title": "Our Packages",
-    "subtitle": "Choose the perfect package for your spiritual journey",
-    "vipUmrah": {
-      "title": "VIP Umrah Package",
-      "description": "Luxury 5-star accommodation near Haram",
-      "features": [
-        "Private transportation",
-        "VIP tawaf",
-        "Personal guide"
+  "hajj2025": {
+    "title": "Hajj 1446 AH - 2025 Packages",
+    "subtitle": "Embark on a Spiritually Enriching and Luxurious Hajj Journey",
+    "priceStart": "Packages starting from €7,000",
+    "countdown": {
+      "title": "Time Until Departure",
+      "days": "Days",
+      "hours": "Hours",
+      "minutes": "Minutes",
+      "seconds": "Seconds"
+    },
+    "features": {
+      "accommodation": {
+        "title": "Premium Accommodation",
+        "description": "Stay in 4 & 5-star hotels in Makkah and Madinah"
+      },
+      "flights": {
+        "title": "Comfortable Flights",
+        "description": "Direct flights with premium airlines"
+      },
+      "transport": {
+        "title": "Modern Transport",
+        "description": "Luxury buses and VIP transfers"
+      },
+      "dates": {
+        "title": "Sacred Dates",
+        "description": "23 May - 21 June 2025, including Day of Arafah"
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "questions": [
+        {
+          "question": "What is included in the package?",
+          "answer": "Our packages include flights, accommodation, transportation, visa processing, and spiritual guidance throughout your journey."
+        },
+        {
+          "question": "How do I secure my booking?",
+          "answer": "A deposit of 30% is required to secure your booking, with the remaining balance due 3 months before departure."
+        },
+        {
+          "question": "Are there any age restrictions?",
+          "answer": "Pilgrims must be at least 12 years old. Those under 18 must be accompanied by a guardian."
+        }
       ]
     },
-    "premiumHajj": {
-      "title": "Premium Hajj Package",
-      "description": "All-inclusive luxury Hajj experience",
-      "features": [
-        "5-star hotels",
-        "Private transport",
-        "24/7 support"
-      ]
-    },
-    "bookNow": "Book Now",
-    "duration": "Duration",
-    "price": "Price"
+    "cta": {
+      "book": "Book Your Hajj Journey Now",
+      "whatsapp": "Join WhatsApp Group"
+    }
+  },
+  "whyChooseUs": {
+    "title": "Why Choose Us",
+    "subtitle": "Experience excellence in Hajj and Umrah services",
+    "features": {
+      "licensed": {
+        "title": "Licensed Provider",
+        "description": "Fully authorized by Saudi authorities"
+      },
+      "premium": {
+        "title": "Premium Service",
+        "description": "Luxury accommodations and VIP treatment"
+      },
+      "expert": {
+        "title": "Expert Guidance",
+        "description": "Experienced scholars and guides"
+      },
+      "support": {
+        "title": "24/7 Support",
+        "description": "Round-the-clock assistance"
+      }
+    }
+  },
+  "testimonials": {
+    "title": "What Our Pilgrims Say",
+    "subtitle": "Real experiences from our valued guests",
+    "items": [
+      {
+        "name": "Ahmed Hassan",
+        "content": "An unforgettable spiritual journey with exceptional service.",
+        "role": "Hajj 2023"
+      },
+      {
+        "name": "Sarah Johnson",
+        "content": "The guidance and support made our Umrah truly special.",
+        "role": "Umrah 2024"
+      }
+    ]
   },
   "spiritualGuidance": {
     "title": "Spiritual Guidance",
-    "subtitle": "Expert guidance for your sacred journey",
+    "subtitle": "Enriching your sacred journey with knowledge and support",
     "services": {
       "education": {
-        "title": "Educational Resources",
-        "description": "Access comprehensive guides about Hajj and Umrah rituals"
+        "title": "Educational Sessions",
+        "description": "Learn about the rituals and their significance"
       },
       "scholars": {
         "title": "Expert Scholars",
-        "description": "Learn from qualified scholars throughout your journey"
+        "description": "Guidance from qualified Islamic scholars"
       },
       "support": {
-        "title": "Personal Support",
-        "description": "Receive one-on-one support for your spiritual and practical needs"
+        "title": "Spiritual Support",
+        "description": "24/7 assistance for your spiritual needs"
       },
       "tours": {
-        "title": "Guided Tours",
-        "description": "Experience sacred sites with knowledgeable guides"
+        "title": "Sacred Tours",
+        "description": "Guided visits to historical Islamic sites"
       }
     }
   },
   "ziyarat": {
+    "title": "Sacred Sites",
+    "subtitle": "Explore the blessed places of Islamic history",
     "sites": {
       "masjidAlHaram": {
         "name": "Masjid Al-Haram",
-        "description": "The Sacred Mosque in Makkah"
+        "description": "The holiest mosque in Islam, home to the Kaaba"
       },
       "masjidNabawi": {
         "name": "Masjid An-Nabawi",
@@ -81,48 +143,64 @@
       }
     }
   },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We're here to assist you on your journey",
+    "form": {
+      "name": "Your Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "message": "Your Message",
+      "submit": "Send Message"
+    },
+    "info": {
+      "email": "info@nasmat-alrahma.com",
+      "phone": "+966 54 133 4225",
+      "address": "Makkah Al-Mukarramah, Kingdom of Saudi Arabia"
+    }
+  },
+  "packages": {
+    "title": "Our Packages",
+    "subtitle": "Choose the journey that suits your needs",
+    "vipUmrah": {
+      "title": "VIP Umrah Package",
+      "description": "Experience a luxurious and spiritually enriching Umrah journey",
+      "features": [
+        "5-star hotel accommodation",
+        "Private transportation",
+        "Personal spiritual guide",
+        "VIP Tawaf experience",
+        "Exclusive prayer areas access"
+      ]
+    }
+  },
   "about": {
     "title": "About Nasmat Al Rahma",
-    "subtitle": "Your trusted partner for Hajj and Umrah services",
+    "subtitle": "Your Trusted Partner for Sacred Journeys",
     "mission": {
       "title": "Our Mission",
-      "description": "At Nasmat Al Rahma, we are dedicated to providing Muslims with premium Hajj and Umrah services"
+      "description": "To provide exceptional Hajj and Umrah services that combine spiritual enrichment with premium comfort, ensuring every pilgrim's journey is meaningful and memorable."
     },
     "values": {
       "title": "Our Values",
       "items": [
-        "Excellence in service",
-        "Spiritual guidance",
-        "Cultural sensitivity"
+        "Excellence in Service - Delivering the highest standards in hospitality",
+        "Spiritual Guidance - Supporting pilgrims on their sacred journey",
+        "Cultural Respect - Honoring Islamic traditions and local customs",
+        "Integrity - Operating with transparency and ethical principles",
+        "Innovation - Combining traditional values with modern comfort"
       ]
     },
-    "quoteText": "Indeed, Allah is with those who fear Him and those who are doers of good.",
-    "quoteSource": "Quran 16:128"
-  },
-  "whyChooseUs": {
-    "title": "Why Choose Nasmat Al Rahma",
-    "subtitle": "Experience excellence in every aspect of your spiritual journey",
-    "features": {
-      "licensed": {
-        "title": "Licensed & Certified",
-        "description": "Fully licensed by Saudi authorities"
-      },
-      "premium": {
-        "title": "Premium Services",
-        "description": "5-star accommodations and VIP transportation services"
-      },
-      "expert": {
-        "title": "Expert Guidance",
-        "description": "Multilingual spiritual guides and dedicated support team"
-      },
-      "support": {
-        "title": "24/7 Support",
-        "description": "Round-the-clock assistance throughout your journey"
-      }
-    }
+    "quoteText": "And proclaim to the people the Hajj; they will come to you on foot and on every lean camel; they will come from every distant pass.",
+    "quoteSource": "Quran 22:27"
   },
   "footer": {
-    "copyright": "Nasmat Al Rahma. All rights reserved",
-    "developedBy": "Developed by"
+    "copyright": "Nasmat Al Rahma. All rights reserved.",
+    "developedBy": "Developed with ❤️ by",
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "support": "Support"
+    }
   }
 }
