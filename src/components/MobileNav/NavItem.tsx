@@ -10,9 +10,17 @@ interface NavItemProps {
 }
 
 export default function NavItem({ path, icon: Icon, label, isActive }: NavItemProps) {
+  const handleClick = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <Link
       to={path}
+      onClick={handleClick}
       className={`flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-1 ${
         isActive ? 'text-gold-600' : 'text-gray-600'
       }`}
