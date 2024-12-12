@@ -1,5 +1,4 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 import PromptButtons from './PromptButtons';
 
 interface PromptContentProps {
@@ -8,15 +7,13 @@ interface PromptContentProps {
 }
 
 export default function PromptContent({ onInstall, onRemindLater }: PromptContentProps) {
-  const { t } = useTranslation();
-
   return (
     <div className="flex-grow">
       <h3 className="text-lg font-semibold text-gray-900">
-        {t('pwa.installPrompt.title')}
+        Install Our App
       </h3>
       <p className="mt-1 text-sm text-gray-500">
-        {t('pwa.installPrompt.description')}
+        Install our app for a better experience and quick access to our services
       </p>
       <PromptButtons 
         onInstall={onInstall}
