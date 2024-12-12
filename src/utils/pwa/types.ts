@@ -14,3 +14,18 @@ export interface BrowserSupport {
   manifest: boolean;
   installPrompt: boolean;
 }
+
+export interface PWAPromptPreference {
+  dismissed: boolean;
+  remindAt?: string;
+}
+
+export interface PWAInstallHookReturn {
+  canInstall: boolean;
+  isInstalled: boolean;
+  isMobile: boolean;
+  shouldShowPrompt: boolean;
+  showNativePrompt: () => Promise<boolean>;
+  dismissPrompt: () => void;
+  remindLater: () => void;
+}
