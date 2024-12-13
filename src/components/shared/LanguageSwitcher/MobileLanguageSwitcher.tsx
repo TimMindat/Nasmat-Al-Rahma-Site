@@ -3,16 +3,18 @@ import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Globe, X } from 'lucide-react';
 import { useLocalization } from '../../../hooks/useLocalization';
-import { SUPPORTED_LANGUAGES } from '../../../utils/i18n/constants';
+import { useLanguageSwitch } from '../../../hooks/useLanguageSwitch';
+import LanguageList from './components/LanguageList';
 import type { Language } from '../../../types';
 
 export default function MobileLanguageSwitcher() {
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation();
-  const { currentLanguage, changeLanguage, isRTL } = useLocalization();
+  const { isRTL } = useLocalization();
+  const { currentLanguage, changeLanguage } = useLanguageSwitch();
 
-  const handleLanguageChange = (code: Language) => {
-    changeLanguage(code);
+  const handleLanguageChange = async (code: Language) => {
+    await changeLanguage(code);
     setIsOpen(false);
   };
 
@@ -61,24 +63,11 @@ export default function MobileLanguageSwitcher() {
                 </button>
               </div>
               
-              <div className="space-y-2 max-h-[60vh] overflow-y-auto pb-safe">
-                {Object.values(SUPPORTED_LANGUAGES).map((language) => (
-                  <button
-                    key={language.code}
-                    onClick={() => handleLanguageChange(language.code as Language)}
-                    className={`w-full p-4 text-left rounded-lg flex items-center justify-between
-                      min-h-[44px] transition-colors
-                      ${currentLanguage === language.code 
-                        ? 'bg-gold-50 text-gold-600' 
-                        : 'hover:bg-gray-50'}`}
-                  >
-                    <span className="font-medium">{language.nativeName}</span>
-                    <span className="text-sm text-gray-500">
-                      ({language.name})
-                    </span>
-                  </button>
-                ))}
-              </div>
+              <LanguageList
+                currentLanguage={currentLanguage}
+                onLanguageSelect={handleLanguageChange}
+                className="max-h-[60vh] overflow-y-auto pb-safe"
+              />
             </motion.div>
           </>
         )}
