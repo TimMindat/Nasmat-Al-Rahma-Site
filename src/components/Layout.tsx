@@ -15,10 +15,10 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <div className={`min-h-screen flex flex-col ${isRTL ? 'font-arabic' : ''}`}>
       <Navbar />
-      <main className="flex-grow pb-16 md:pb-0">
+      <main className="flex-grow">
         {children}
       </main>
-      <Footer />
+      <Footer className="pb-[72px] md:pb-0" />
       <BottomNav />
       <InstallPrompt />
     </div>

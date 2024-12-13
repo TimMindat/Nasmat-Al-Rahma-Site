@@ -2,13 +2,17 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLanguage } from '../../hooks/useLanguage';
 
-export default function Footer() {
+interface FooterProps {
+  className?: string;
+}
+
+export default function Footer({ className = '' }: FooterProps) {
   const { t } = useTranslation();
   const { isRTL } = useLanguage();
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-900 text-white py-8">
+    <footer className={`bg-gray-900 text-white py-8 ${className}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={`flex flex-col items-center space-y-4 ${isRTL ? 'text-right' : 'text-left'}`}>
           <div className="text-center">
