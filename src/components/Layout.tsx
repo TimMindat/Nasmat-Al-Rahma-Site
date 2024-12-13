@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import BottomNav from './MobileNav/BottomNav';
 import Footer from './Footer';
 import PWAPrompt from './shared/PWAPrompt';
+import MobileLanguageSwitcher from './shared/LanguageSwitcher/MobileLanguageSwitcher';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -21,6 +22,7 @@ export default function Layout({ children }: LayoutProps) {
       <Footer className="pb-[72px] md:pb-0" />
       <BottomNav />
       <PWAPrompt />
+      <MobileLanguageSwitcher />
     </div>
   );
 }

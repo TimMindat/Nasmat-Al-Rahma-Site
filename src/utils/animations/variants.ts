@@ -5,7 +5,13 @@ export const fadeIn = {
 };
 
 export const slideUp = {
-  initial: { opacity: 0, y: 20 },
+  initial: { opacity: 0, y: 100 },
   animate: { opacity: 1, y: 0 },
-  exit: { opacity: 0, y: 20 }
+  exit: { opacity: 0, y: 100 }
+};
+
+export const slideDown = {
+  initial: { opacity: 0, y: -100 },
+  animate: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: -100 }
 };
