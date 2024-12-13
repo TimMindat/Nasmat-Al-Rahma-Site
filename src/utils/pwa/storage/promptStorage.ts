@@ -1,11 +1,9 @@
-import { PWAPromptPreference } from '../types';
-
 const STORAGE_KEYS = {
   DISMISSED: 'pwa-prompt-dismissed',
   REMINDER: 'pwa-prompt-reminder'
 } as const;
 
-export const getPromptPreference = (): PWAPromptPreference => {
+export const getPromptPreference = () => {
   const dismissed = localStorage.getItem(STORAGE_KEYS.DISMISSED) === 'true';
   const remindAt = localStorage.getItem(STORAGE_KEYS.REMINDER);
 

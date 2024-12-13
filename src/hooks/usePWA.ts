@@ -3,12 +3,14 @@ import {
   checkBrowserSupport, 
   isMobileBrowser, 
   isPWAInstalled,
-  showInstallPrompt 
+  showInstallPrompt,
+  setupInstallPrompt 
 } from '../utils/pwa';
 import { 
   getPromptPreference, 
   setPromptDismissed, 
-  setPromptReminder 
+  setPromptReminder,
+  clearPromptPreference 
 } from '../utils/pwa/storage/promptStorage';
 import type { BrowserSupport, PWAInstallHookReturn } from '../utils/pwa/types';
 
@@ -24,21 +26,35 @@ export function usePWA(): PWAInstallHookReturn {
   const [isMobile, setIsMobile] = useState(false);
   const [shouldShowPrompt, setShouldShowPrompt] = useState(false);
 
+  // Initialize PWA support and prompt
   useEffect(() => {
-    const browserSupport = checkBrowserSupport();
-    setSupport(browserSupport);
-    setIsInstalled(isPWAInstalled());
-    setIsMobile(isMobileBrowser());
+    const initializePWA = async () => {
+      // Clear any existing preferences to ensure prompt shows immediately
+      clearPromptPreference();
+      
+      const browserSupport = checkBrowserSupport();
+      setSupport(browserSupport);
+      setIsInstalled(isPWAInstalled());
+      setIsMobile(isMobileBrowser());
 
-    // Check if we should show the prompt
-    const preference = getPromptPreference();
-    const shouldShow = !preference.dismissed && 
-      (!preference.remindAt || new Date(preference.remindAt) <= new Date());
-    setShouldShowPrompt(shouldShow);
+      // Setup install prompt event handler
+      setupInstallPrompt();
+
+      // Show prompt immediately if not installed and on mobile
+      const shouldShow = !isPWAInstalled() && isMobileBrowser();
+      setShouldShowPrompt(shouldShow);
+    };
+
+    initializePWA();
   }, []);
 
   const showNativePrompt = useCallback(async () => {
-    return await showInstallPrompt();
+    const installed = await showInstallPrompt();
+    if (installed) {
+      setIsInstalled(true);
+      setShouldShowPrompt(false);
+    }
+    return installed;
   }, []);
 
   const dismissPrompt = useCallback(() => {
