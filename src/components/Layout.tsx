@@ -2,8 +2,8 @@ import React from 'react';
 import { useLanguage } from '../hooks/useLanguage';
 import Navbar from './Navbar';
 import BottomNav from './MobileNav/BottomNav';
-import Footer from './shared/Footer';
-import InstallPrompt from './shared/PWAPrompt/InstallPrompt';
+import Footer from './Footer';
+import LanguageSwitcher from './shared/LanguageSwitcher';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -20,7 +20,7 @@ export default function Layout({ children }: LayoutProps) {
       </main>
       <Footer className="pb-[72px] md:pb-0" />
       <BottomNav />
-      <InstallPrompt />
+      <LanguageSwitcher />
     </div>
   );
 }

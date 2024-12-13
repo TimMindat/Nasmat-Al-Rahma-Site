@@ -22,6 +22,17 @@ export default {
         serif: ['Playfair Display', 'Georgia', 'serif'],
         arabic: ['Noto Sans Arabic', 'system-ui', 'sans-serif'],
       },
+      spacing: {
+        'safe': 'env(safe-area-inset-bottom, 1rem)',
+      },
+      padding: {
+        'safe': 'env(safe-area-inset-bottom, 1rem)',
+      },
+      zIndex: {
+        '60': '60',
+        '70': '70',
+        '80': '80',
+      }
     },
   },
   plugins: [],
