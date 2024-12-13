@@ -18,7 +18,9 @@ export const showInstallPrompt = async () => {
   // Wait for the user to respond to the prompt
   const { outcome } = await deferredPrompt.userChoice;
 
+  // Clear the deferred prompt
   deferredPrompt = null;
+
   return outcome === 'accepted';
 };
 
